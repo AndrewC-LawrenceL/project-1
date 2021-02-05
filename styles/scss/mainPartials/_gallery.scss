@@ -1,0 +1,12 @@
+.gallery {
+    background-color: $mainBlue;
+
+    .galleryFlex {
+
+
+        img {
+            width: calc((100% / 3) - 20px);
+        }
+    }
+
+}

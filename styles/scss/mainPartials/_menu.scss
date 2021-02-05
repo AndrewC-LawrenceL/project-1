@@ -1,0 +1,24 @@
+.menu {
+    
+    background-color: $mainLightBlue;
+    @include center;
+
+    .menuFlexMain {
+        @include center;
+        
+        .menuItem div {
+            background-color: $mainYellow;
+            border-radius: 50%;
+            width: 15%;
+        }
+
+        .menuItem {
+            flex-wrap: wrap;
+            display: flex;
+            width: calc(50% - 10px)
+            
+
+
+        }
+    }
+}

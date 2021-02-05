@@ -1,0 +1,65 @@
+.info {
+    background-color: $mainBlue; 
+    @include center;
+    width: 100%;
+    position: relative;
+
+    .image1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        box-shadow: $mainYellow 25px 25px;
+    }
+
+    .image2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        box-shadow: $mainYellow 25px 25px;
+    }
+
+    .infoFlex1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+
+        button {
+
+        }
+
+
+    }
+
+    .infoFlex2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+
+        button {
+
+        }
+
+
+    }
+
+
+    
+
+
+}

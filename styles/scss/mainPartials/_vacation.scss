@@ -1,0 +1,62 @@
+.vacation {
+    background-color: $mainLightBlue;
+    @include center;
+
+    .vacationFlex1 {
+
+        @include center;
+        flex-direction: column;
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+
+        button {
+
+        }
+
+    }
+
+    .vacationBanner {
+        width: 100%;
+    }
+
+    .vacationSmall {
+
+    }
+
+
+.vacation2 {
+
+        
+
+    .vacationFlex2 {
+        width: 100%;
+        background-color: $mainLightBlue;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+
+        button {
+
+        }
+
+    }
+
+
+
+    }
+}
