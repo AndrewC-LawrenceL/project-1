@@ -1,24 +1,53 @@
 .menu {
-    
+
+    height: 500px;
     background-color: $mainLightBlue;
     @include center;
+    width: 100%;
+    padding-top: 170px;
+
+    i {
+        color: black;
+        font-size: 2rem;
+    }
 
     .menuFlexMain {
         @include center;
-        
-        .menuItem div {
-            background-color: $mainYellow;
-            border-radius: 50%;
-            width: 15%;
-        }
+    
 
-        .menuItem {
+        .menuFlex {
+            @include center;
             flex-wrap: wrap;
-            display: flex;
-            width: calc(50% - 10px)
+            width: 88%;
+
+            p {
+                width: 90%;
+                margin: 15px 0px;
+            }
+
+            h2 {
+                margin: 0px;
+                color: $mainBlue;
+            }
             
+            
+            .menuItem div {
+                background-color: $mainYellow;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                @include center;
+                margin-right: 20px;
+            }
 
-
+            .menuItem {
+                flex-wrap: wrap;
+                display: flex;
+                width: calc(50% - 10px)
+                
+           
         }
     }
+  } 
+
 }

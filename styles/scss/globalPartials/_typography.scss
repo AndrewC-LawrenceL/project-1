@@ -1,8 +1,28 @@
 
 
+h1, h2, button {
+    font-family: $fontEnglish;
+}
 
-// Roboto, regular, 20px;
-// bold
+nav, p {
+    font-family: $fontRoboto;
+}
 
-// IM_FELL_Englsih_
-// regular italic
+h2 {
+    font-size: 4rem;
+    font-weight: 400; 
+}
+
+
+
+// BUTON STYLES
+
+button {
+    background-color: $mainYellow;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+
+    
