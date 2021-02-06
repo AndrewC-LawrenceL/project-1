@@ -235,6 +235,39 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  font-family: 'IM Fell English', serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'IM Fell English', serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'IM Fell English', serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'IM Fell English', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: 'IM Fell English', serif;
+}
+
+nav ul {
+  font-family: 'roboto', sans-serif;
+  list-style: none;
+}
+
 main {
   background-image: url("../../../assets/home-header.jpg");
   width: 100%;
@@ -399,4 +432,7 @@ main .mainBoxImage {
 .gallery .galleryFlex img {
   width: calc((100% / 3) - 20px);
 }
-/*# sourceMappingURL=styles.css.map */
+
+header {
+  background-image: url(../../../assets/blog-header.jpg);
+}

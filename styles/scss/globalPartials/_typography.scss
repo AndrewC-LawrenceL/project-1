@@ -1,8 +1,50 @@
 
-
-
 // Roboto, regular, 20px;
 // bold
 
 // IM_FELL_Englsih_
 // regular italic
+
+// font-family: 'IM Fell English', serif;
+// font-family: 'Roboto', sans-serif;
+
+// STYLING OF HEADERS, P AND OTHER TAGS WITH TEXT IN THEM 
+// MAIN HEADINGS FOR WEBPAGES (BOAT RIDE ADVENTURES, BLOG, CONTACT)
+h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+// HEADINGS FOR IMPORTANT SECTIONS (NEXT DESTINATION, NEW LOCATIONS, COMMUNITY ETC. 
+h2 {
+    font-family: 'IM Fell English', serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+// HEADINGS FOR BOXES ON MAIN PAGE (OUR PROGRAMS, NEW LOCATIONS)
+h3 {
+    font-family: 'IM Fell English', serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+// HEADINGS FOR ASIDE AND SUB-SECTIONS (OUR MISSION, RECENT POSTS ETC.)
+h4 {
+    font-family: 'IM Fell English', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+//BUTTON TYPOGRAPHY
+.button {
+    font-family: 'IM Fell English', serif;
+
+}
+
+//NAVIGATION 
+nav ul {
+    font-family: 'roboto', sans-serif;
+    list-style: none;
+}

@@ -8,3 +8,9 @@
     background-color: $mainYellow;
     
 }
+
+// For Font Size declaration
+@mixin fontSize ($sizeValue) {
+    font-size: $sizeValue;
+}
+
