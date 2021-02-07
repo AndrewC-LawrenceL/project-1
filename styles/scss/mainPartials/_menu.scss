@@ -22,12 +22,14 @@
 
             p {
                 width: 90%;
+                line-height: 2.6rem;
                 margin: 15px 0px;
             }
 
             h2 {
                 margin: 0px;
                 color: $mainBlue;
+                
             }
             
             
@@ -43,7 +45,9 @@
             .menuItem {
                 flex-wrap: wrap;
                 display: flex;
-                width: calc(50% - 10px)
+                width: calc(50% - 10px);
+                margin: 20px 0px;
+                line-height: 4.9rem;
                 
            
         }

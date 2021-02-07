@@ -259,15 +259,17 @@ button {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 body .wrapper {
   max-width: 1500px;
+  margin: 0 auto;
 }
 
 body .mainWrapper {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 body button {
@@ -276,7 +278,7 @@ body button {
 }
 
 body p {
-  line-height: 1.9rem;
+  line-height: 2.6rem;
 }
 
 body h2 {
@@ -341,7 +343,7 @@ main a:hover {
 
 main h1 {
   color: #FDD908;
-  font-size: 4.6rem;
+  font-size: 6.6rem;
   width: 40%;
   text-transform: uppercase;
 }
@@ -404,6 +406,7 @@ main .mainBoxImage {
 
 .menu .menuFlexMain .menuFlex p {
   width: 90%;
+  line-height: 2.6rem;
   margin: 15px 0px;
 }
 
@@ -436,6 +439,8 @@ main .mainBoxImage {
   display: -ms-flexbox;
   display: flex;
   width: calc(50% - 10px);
+  margin: 20px 0px;
+  line-height: 4.9rem;
 }
 
 .info {
@@ -458,6 +463,7 @@ main .mainBoxImage {
           justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .info .infoFlexMain img {
@@ -494,7 +500,7 @@ main .mainBoxImage {
 .info .infoFlexMain p {
   color: white;
   margin: 0px;
-  width: 75%;
+  width: 100%;
   margin: 10px 0px 27px 0px;
 }
 
@@ -505,7 +511,7 @@ main .mainBoxImage {
 
 .info .infoFlexMain button {
   margin: 0px;
-  width: 38%;
+  width: 27%;
   padding: 13px;
 }
 
