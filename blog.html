@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/scss/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
     <title>Blog</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,34 +16,33 @@
 </head>
 
 <body>
-
     <!-- HEADER AND NAVIGATION BEGINS -->
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-
-        <h2>Blog</h2>
+    <header class="headerWrapper">
+        <div class="blogFlex">
+            <nav>
+                <ul>
+                    <li><a href="./index.html" aria-label="Go back to our homepage">Home</a></li>
+                    <li><a href="" aria-label="visit our about page">About</a></li>
+                    <li><a href="./blog.html" aria-label="visit our blog">Blog</a></li>
+                    <li><a href="./contact.html" aria-label="go to our contact page to connect with us">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Blog</h1>
     </header>
     <!-- HEADER AND NAVIGATION ENDS -->
 
-    <!-- Background image needs to be inserted here or in the header -->
-
     <!-- ASIDE SECTION BEGINS -->
-    <aside class="aside">
+    <aside class="aside wrapper">
         <div class="wrapper">
-            <div class="asideFlex1">
-                <img src="./assets/blog-side-image.jpg" alt="View of the boat's deck on the port side around sunset time.">
-
+            <div class="asideFlex">
+                <picture class="asideFlexItem">
+                    <img src="./assets/blog-side-image.jpg" alt="View of the boat's deck on the port side around sunset time.">
+                </picture>
+    
                 <h3>Our Mission</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui culpa ipsum aperiam. Iste at ab
-                necessitatibus, cumque quidem facere!</p>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui culpa ipsum aperiam. Iste at abnecessitatibus, cumque quidem facere!</p>
+    
                 <h3>Recent Posts</h3>
                 <ul>
                     <li>Donec facilisis tortor ut</li>
@@ -52,32 +55,35 @@
     </aside>
     <!-- ASIDE SECTION ENDS -->
 
-    <section class="nextDestinationContainer">
-        <img src="./assets/blog-post-image.jpg" alt="At the bow of one of our boats tied to port.">
+    <main class="blogMain">
+        <div class="wrapper">
+        <section class="nextDestinationContainer">
+            <img src="./assets/blog-post-image.jpg" alt="At the bow of one of our boats tied to port.">
 
-        <h2>Next Destination</h2>
+            <h2>Next Destination</h2>
 
-        <p>Monday October 30, 2019 by Sulaire</p>
+            <p>Monday October 30, 2019 by Sulaire</p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consectetur possimus numquam natus
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consectetur possimus numquam natus
             debitis vel. Maiores delectus accusantium quis praesentium voluptates iste, id fuga totam earum. Impedit
             repudiandae non maiores, voluptatem, aspernatur reiciendis facilis provident laborum odio deserunt eos
             atque?</p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi dolores quaerat error, alias deleniti
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi dolores quaerat error, alias deleniti
             maxime autem aliquid vitae doloremque inventore voluptatem sequi eaque, praesentium in quas amet, eum
             facilis quia perspiciatis ipsa numquam corrupti tempora itaque! Assumenda magnam aspernatur veniam neque?
             Quidem dolorem dolor repellendus vel aut officiis magni!</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci blanditiis voluptates perspiciatis
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci blanditiis voluptates perspiciatis
             molestias quibusdam. Nemo in voluptatibus consequatur rerum, id animi libero! Corporis, reprehenderit. Quod,
             voluptatem voluptate, aut accusamus perferendis delectus labore ratione consequuntur minus quasi voluptates
             iusto praesentium sunt natus deserunt repellat in? Dolor dolorum iusto consectetur, dignissimos et
             perferendis maiores voluptates debitis commodi mollitia quod neque quae reprehenderit!</p>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam adipisci voluptatibus, non reprehenderit
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam adipisci voluptatibus, non reprehenderit
             rerum officiis doloremque itaque facilis ipsam rem!</p>
-    </section>
+        </section>
+    </div>
 
     <!-- COMMENTS SECTION BEGINS -->
     <section class="comments">
@@ -118,11 +124,10 @@
                 </button>
             </form>
         </fieldset>
-
         <!-- COMMENT FORM SECTION ENDS -->
     </section>
-
     <!-- COMMENT SECTION ENDS -->
+    </main>
 
     <!-- FOOTER BEGINS -->
     <footer>

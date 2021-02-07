@@ -1,0 +1,128 @@
+.contactWrapper {
+    background-image: url(../../../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.contactUsFlexContainer {
+    display: flex;
+}
+
+
+
+// SOCIAL MEDIA AND ADDRESS INFORMATION
+.socialContainerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.fab {
+    list-style-type: none;
+    font-size: 2rem;
+    color: $mainBlue;
+    padding: 10px 10px;
+    flex: 1 0 20%;
+}
+
+.socialFlexItem1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    .contactEmail {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $mainBlue;
+}
+
+.addressInformation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        padding: 0;
+        font-size: 2rem;
+        margin: 1px 0 5px 20px;
+        text-decoration: none;
+        font-style: normal;
+        color: $mainBlue;
+    }
+}
+
+
+//COMMENT AND EMAIL RESPONSE FORM 
+.commentFormFlex {
+    background-color: $mainBlue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    box-shadow: 15px 15px $mainYellow;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+label[for="userName"], 
+label[for="userEmail"],
+label[for="commentBox"] {
+    display: none;
+}    
+
+.userName,
+.userEmail,
+.commentBox {
+    padding: 15px 20px;
+    margin: 20px 18px 20px 22px;
+    background-color: $mainBlue;
+    color: white;
+}
+
+.userName,
+.userEmail {
+    border-color: $mainYellow;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.userName {
+    width: 42%;
+}
+
+.userEmail {
+    width: 42%;
+}
+
+.commentBox {
+    width: 90%;
+    resize: none;
+    border-color: $mainYellow;
+}
+
+.submitComment {
+    width: 90%;
+    margin: 15px 10px 20px 22px;
+    border: 0;
+    background-color: $mainYellow;
+}
