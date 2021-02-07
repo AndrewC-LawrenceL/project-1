@@ -3,9 +3,12 @@
 
     .galleryFlex {
 
+        @include center;
+
 
         img {
-            width: calc((100% / 3) - 20px);
+            width: calc((100% / 3) - 100px);
+            margin: 80px 20px;
         }
     }
 

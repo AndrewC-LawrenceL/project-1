@@ -8,69 +8,82 @@
     <link rel="stylesheet" href="./styles/scss/styles.css">
     <script src="https://kit.fontawesome.com/bfdfaf7e26.js"></script>
     <title>Get in Touch</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- HEADER AND NAVIGATION -->
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-
-        <h2>Get in Touch</h2>
-
-        <!-- Insert background image in the header -->
-    </header>
+    <!-- HEADER AND NAVIGATION BEGINS -->
+        <header class="contactWrapper">
+            <div class="contactFlex">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" aria-label="Go back to our homepage">Home</a></li>
+                        <li><a href="" aria-label="visit our about page">About</a></li>
+                        <li><a href="./blog.html" aria-label="visit our blog">Blog</a></li>
+                        <li><a href="./contact.html" aria-label="go to our contact page to connect with us">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Get in Touch</h1>
+        </header>
+        <!-- HEADER AND NAVIGATION ENDS -->
 
 
     <!-- SOCIAL MEDIA & CONTACT SECTION -->
     <aside class="socialMedia">
-        <div class="wrapper">
-            <div class="socialContainerFlex">
-                <a href="https://www.facebook.com" aria-label="Visit our facebook page"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com" aria-label="Visit our instagram page today"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-
-                <!-- EMAIL CONTACT -->
-                <a href="mailto:info@email.com">info@email.com</a>
-            </div>
         
-            <address class="addressInformation">
-                <p><a href="tel:11234567890">123-456-7890</a></span>
-                <span>123 Queen Street West, Unit 10</span><span>Toronto, Ontario</span>
-                <span>M5V2D5</span></p>
-            </address>
-        </div>
     </aside>
 
 
-    <!-- CONTACT FORM BEGINS -->
     <section class="contactUs">
         <div class="wrapper">
-            <fieldset>
-                <legend>Please Contact Us!</legend>
-                <form action="submit">
-                    <input type="text" aria-label="Please input your name" name="userName" value="userName" id="userName"
-                    class="userName" placeholder="Name">
+            <div class="contactUsFlexContainer">
+                <div class="socialContainerFlex wrapper">
+                    <div class="socialFlexItem">
+                        <a href="https://www.facebook.com" aria-label="Visit our facebook page"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" aria-label="Visit our instagram page today"><i
+                            class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            
+                        <!-- EMAIL CONTACT -->
+                        <a href="mailto:info@email.com" class="socialFlexItem">info@email.com</a>
+                    </div>
+            
+                    <address class="addressInformation">
+                        <p><a href="tel:11234567890">123-456-7890</a></span>
+                        <span>123 Queen Street West, Unit 10</span><span>Toronto, Ontario</span>
+                        <span>M5V2D5</span>
+                        </p>
+                    </address>
+                </div>
 
-                    <input type="email" aria-label="Please enter your email address" name="userEmail" value="userEmail"
-                    id="userEmail" class="userEmail" placeholder="Email address">
+                <!-- CONTACT FORM BEGINS -->
+                <fieldset class="commentFormFlex">
+                    <legend>Please Contact Us!</legend>
+                    <form action="submit">
+                        <label for="userName">User name</label>
+                        <input type="text" aria-label="Please input your name" name="userName" value="userName" id="userName"
+                        class="userName" placeholder="Name">
 
-                    <textarea aria-label="please input your message and we will follow up with you by email" name="commentBox" id="commentBox" cols="50" rows="20"
-                    placeholder="Comment"></textarea>
+                        <label for="userEmail">Email address</label>
+                        <input type="email" aria-label="Please enter your email address" name="userEmail" value="userEmail"
+                        id="userEmail" class="userEmail" placeholder="Email address">
 
-                    <button class="submitComment" aria-label="Post a Comment">
-                    <a href="#postComment">Post Comment</a>
-                    </button>
-                </form>
-            </fieldset>
+                        <label for="commentBox">Comments</label>
+                        <textarea aria-label="please input your message and we will follow up with you by email" name="commentBox" id="commentBox" class="commentBox" cols="90" rows="20"
+                        placeholder="Message"></textarea>
+
+                        <button class="submitComment" aria-label="Submit a message">
+                        <a href="#postComment">Submit</a>
+                        </button>
+                    </form>
+                </fieldset>
+            </div>
         </div>
     </section>
     <!-- CONTACT FORM ENDS -->
