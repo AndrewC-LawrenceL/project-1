@@ -153,14 +153,34 @@ li {
     width: 100%;
 }
 
+
 .commentFlexItem1,
 .commentFlexItem2 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     img {
         width: auto;
+        height: 100%;
+    }
+
+    h4 {
+        margin: 0;
     }
 }
+
+.commentFlexItem1 {
+
+    h2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    
+}
+
+
 
 .commentBlogFlex {
     background-color: $mainLightBlue;

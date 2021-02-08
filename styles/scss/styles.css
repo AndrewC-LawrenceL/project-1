@@ -871,11 +871,28 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .commentFlexItem1 img,
 .commentFlexItem2 img {
   width: auto;
+  height: 100%;
+}
+
+.commentFlexItem1 h4,
+.commentFlexItem2 h4 {
+  margin: 0;
+}
+
+.commentFlexItem1 h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
 }
 
 .commentBlogFlex {
