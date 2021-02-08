@@ -876,6 +876,7 @@ li {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 90%;
 }
 
 .commentFlexItem1 img,
@@ -884,15 +885,18 @@ li {
   margin-right: 20px;
 }
 
-h2 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.commentsTitle h2 {
   text-align: center;
 }
 
 .commentFlexItem1 {
   margin-bottom: 50px;
   margin-left: 32px;
+}
+
+.commentFlexItem1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .commentInfoContainer1,
@@ -941,11 +945,15 @@ h2 {
   background-color: #0D457F;
 }
 
-.contactWrapper ul {
+header.contactWrapper {
+  background-image: url("../../../assets/contact-header.jpg");
+}
+
+header.contactWrapper ul {
   padding-left: 150px;
 }
 
-.contactWrapper h1 {
+header.contactWrapper h1 {
   width: 50%;
   font-size: 6.3rem;
   padding: 5px 20px 20px 100px;

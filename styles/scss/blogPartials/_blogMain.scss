@@ -159,6 +159,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    width: 90%;
 
     img {
         width: auto;
@@ -167,14 +168,20 @@ li {
 
 }
 
-h2 {
-    flex-basis: 100%;
-    text-align: center;
+.commentsTitle {
+    h2 {
+        text-align: center;
+    }
 }
+
 
 .commentFlexItem1 {
     margin-bottom: 50px;
     margin-left: 32px;
+
+    img {
+        object-fit: contain;
+    }
 }
 
 .commentInfoContainer1,
