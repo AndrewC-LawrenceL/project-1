@@ -873,26 +873,37 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .commentFlexItem1 img,
 .commentFlexItem2 img {
   width: auto;
-  height: 100%;
+  margin-right: 20px;
 }
 
-.commentFlexItem1 h4,
-.commentFlexItem2 h4 {
-  margin: 0;
-}
-
-.commentFlexItem1 h2 {
+h2 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
+}
+
+.commentFlexItem1 {
+  margin-bottom: 50px;
+  margin-left: 32px;
+}
+
+.commentInfoContainer1,
+.commentInfoContainer2 {
+  width: 55%;
+}
+
+.commentInfoContainer1 h4,
+.commentInfoContainer2 h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .commentBlogFlex {

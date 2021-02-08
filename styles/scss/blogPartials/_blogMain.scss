@@ -158,26 +158,33 @@ li {
 .commentFlexItem2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
 
     img {
         width: auto;
-        height: 100%;
+        margin-right: 20px;
     }
 
-    h4 {
-        margin: 0;
-    }
+}
+
+h2 {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .commentFlexItem1 {
+    margin-bottom: 50px;
+    margin-left: 32px;
+}
 
-    h2 {
-        flex-basis: 100%;
-        text-align: center;
+.commentInfoContainer1,
+.commentInfoContainer2 {
+    width: 55%;
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
     }
-
-    
 }
 
 
