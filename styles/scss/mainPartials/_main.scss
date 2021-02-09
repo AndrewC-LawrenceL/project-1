@@ -17,6 +17,7 @@ body {
     button {
         width: 18%;
         padding: 10px;
+        background-color: $mainYellow;
     }
 
     p {
@@ -88,6 +89,33 @@ main {
     }
 
 }
+
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+
+    @media (max-width: 480x) {
+
+        main {
+
+            ul {
+
+            }
+
+            h1 {
+
+            }
+
+            img {
+                
+            }
+
+
+
+        }
+
+    }
+
 
  
     

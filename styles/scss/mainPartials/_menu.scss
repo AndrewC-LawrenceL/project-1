@@ -1,10 +1,9 @@
 .menu {
-
-    height: 500px;
     background-color: $mainLightBlue;
     @include center;
     width: 100%;
     padding-top: 170px;
+    padding-bottom: 110px;
 
     i {
         color: black;
@@ -55,3 +54,12 @@
   } 
 
 }
+
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+
+    @media (max-width: 480x) {
+
+        
+    }
