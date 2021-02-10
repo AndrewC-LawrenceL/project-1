@@ -195,6 +195,7 @@ li {
     h4 {
         margin-top: 0;
         margin-bottom: 10px;
+        color: $mainBlue;
     }
 }
 
@@ -244,11 +245,6 @@ li {
         }
     }
 
-    .userName,
-    .userEmail {
-        padding: 15px 15px;
-    }
-
     .commentBlogFlex {
         padding-right: 30px;
     }
@@ -258,17 +254,60 @@ li {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .asideFlexContainer {
+        width: 25%;
+    }
+}
+
 @media screen and (max-width: 950px) {
-    .userName,
-    .userEmail {
-        padding: 10px 10px;
-        margin: 20px 18px 15px 0px;
-        font-size: 1.5rem;
-        margin-right: 5px;
+    .nextPostContainer,
+    .commentsTitle {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .nextDestinationContainer,
+    .commentInfoContainer1,
+    .commentInfoContainer2 {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .commentInfoContainer1,
+    .commentInfoContainer2 {
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        margin-right: 30px;
+        padding-left: 70px;
+    }
+
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        img {
+            padding-bottom: 50px;
+        }
+    }
+
+    .commentBlogFlex {
+        .userName,
+        .userEmail {
+            font-size: 1.5rem;
+            padding: 10px 10px 10px 10px;
+            margin-right: 5px;
+        }
     }
 
     .commentBox {
         margin: 20px 18px 15px 0px;
+        font-size: 1.5rem;
     }
 
     .submitBlog {
@@ -277,9 +316,121 @@ li {
     
 }
 
+@media screen and (max-width: 841px) {
+    .asideFlexContainer {
+        width: 27%;
+    }
+    
+    .nextDestinationContainer {
+        img {
+            margin-top: -350px;
+        }
+        
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        img {
+            padding-bottom: 100px;
+        }
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .nextDestinationContainer {
+        img {
+            margin-top: -280px;
+        }
+        
+    }
+    
+    .missionContainer {
+        h3 {
+            font-size: 2.5rem;
+        }
 
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
 
+@media screen and (max-width: 734px) {
+    .nextPostContainer,
+    .commentsTitle {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 682px) {   
+    .blogFlex {
+        nav {
+            font-size: 1rem;
+        }
+    }
+
+    .blogContainer {
+        flex-direction: column;
+    }
+
+    .asideFlexContainer {
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -300px;
+        z-index: 4;
+        box-shadow: 10px 10px $mainYellow;
+        
+        img {
+            margin-left: 0;
+            object-fit: cover;
+            box-shadow: 0px 0px;
+        }
+    }
+
+    .missionContainer {
+        padding: 30px 30px;
+    }
+
+    .nextDestinationContainer {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+        
+        img {
+            margin-top: 0px;
+        }
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        img {
+            padding-bottom: 120px;
+        }
+    }
+
+    .nextPostContainer {
+        padding: 30px 60px 55px 60px;
+    }
+
+    .comments {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        justify-content: center;
+    }
+
+    .commentFlexItem1 {
+        flex-wrap: nowrap;
+    }
+
+}
 
 
 
