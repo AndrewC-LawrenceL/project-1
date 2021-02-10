@@ -1064,7 +1064,7 @@ li {
   }
 }
 
-@media screen and (max-width: 682px) {
+@media screen and (max-width: 700px) {
   .blogFlex nav {
     font-size: 1rem;
   }
@@ -1133,9 +1133,117 @@ li {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .commentFlexItem1 p,
+  .commentFlexItem2 p {
+    padding-right: 5px;
+  }
   .commentFlexItem1 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .commentBlogFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    padding-right: 0px;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .missionContainer {
+    padding: 15px 10px 15px 15px;
+  }
+  .missionContainer h3 {
+    font-size: 2rem;
+  }
+  .missionContainer p {
+    font-size: 1.2rem;
+  }
+  .missionContainer li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .commentFlexItem1,
+  .commentFlexItem2 {
+    padding-left: 10px;
+  }
+  .commentFlexItem1 img,
+  .commentFlexItem2 img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    margin-right: 10px;
+  }
+  .commentInfoContainer1 h4,
+  .commentInfoContainer2 h4 {
+    font-size: 1.3rem;
+  }
+  .commentInfoContainer1 p,
+  .commentInfoContainer2 p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .nextPostContainer h2 {
+    font-size: 2.1rem;
+  }
+  .nextPostContainer p {
+    font-size: 1.2rem;
+  }
+  .commentsTitle h2 {
+    font-size: 2.1rem;
+  }
+  .commentBlogFlex .userName,
+  .commentBlogFlex .userEmail {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .blogFlex nav li {
+    margin: 0 15px;
+  }
+  .asideFlexContainer {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nextPostContainer {
+    padding: 30px 40px 55px 40px;
+  }
+  .commentFlexItem1,
+  .commentFlexItem2 {
+    padding-left: 0px;
+  }
+  .commentFlexItem1 img {
+    margin-right: 5px;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .blogFlex nav li {
+    margin: 0 10px;
+  }
+  .asideFlexContainer {
+    margin-top: -200px;
+  }
+  .commentFlexItem1 img {
+    margin-right: 0px;
+  }
+  .commentInfoContainer1,
+  .commentInfoContainer2 {
+    width: 60%;
   }
 }
 
