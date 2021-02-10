@@ -12,4 +12,18 @@
         }
     }
 
+    @media (max-width: 450px) {
+
+        .galleryFlex {
+            flex-direction: column;
+            padding: 50px 0px;
+
+            img {
+                width: 75%;
+                margin: 40px 20px;
+            }
+
+        }
+    }
+
 }

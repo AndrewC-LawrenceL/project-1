@@ -4,7 +4,6 @@
     
     
     .infoFlexMain {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -91,10 +90,47 @@
                 padding: 20px 0px;
             }
 
-        }
+    }             
 
 
+    @media (max-width: 450px) {
     
+        .infoFlexMain {
+            flex-direction: column;
+            
+                .infoFlex11 {
+                    width: 100%;
+                    text-align: center;                 
 
+                    button {
+                        width: 62%;
+                        margin: 0 auto;
+                    }
 
+                    .image1 {
+                        position: static;
+                        width: 75%;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .infoFlex22 {
+                    width: 100%;
+                    text-align: center;  
+                       
+
+                    button {
+                        width: 62%;
+                        margin: 0 auto;
+                    }
+
+                    .image2 {
+                        position: static;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        margin-top: 40px;
+                    }
+                }
+        }
+    } 
 }

@@ -13,7 +13,6 @@
     .menuFlexMain {
         @include center;
     
-
         .menuFlex {
             @include center;
             flex-wrap: wrap;
@@ -47,19 +46,44 @@
                 width: calc(50% - 10px);
                 margin: 20px 0px;
                 line-height: 4.9rem;
-                
-           
+            }
         }
+    } 
+
+
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+
+    @media (max-width: 450px) {
+
+    padding-top: 70px;
+    flex-direction: column;
+
+        .menuFlexMain {
+
+
+            .menuFlex {
+
+
+                .menuItem {
+                    width: 100%;
+                   justify-content: center;
+                   text-align: center;
+
+                    h2 {
+                        width: 90%;
+                    }
+
+                }
+            }
+        }
+        
     }
-  } 
+
+
 
 }
 
-        // MEDIA QUERIES BEGIN
-        // MEDIA QUERIES BEGIN
-        // MEDIA QUERIES BEGIN
 
-    @media (max-width: 480x) {
-
-        
-    }
+  

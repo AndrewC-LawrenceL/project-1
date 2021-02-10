@@ -1,8 +1,6 @@
 
 body {
-
     font-size: 1.7rem;
-    
     
     .wrapper {
         max-width: 1500px;
@@ -43,78 +41,89 @@ main {
         width: 90%;
         flex-direction: column;
         justify-content: space-between;
-    }
 
-    nav {
-        margin-top: 50px;
-        
-    }
+        nav {
+            margin-top: 50px;
+        }
 
-    ul {
-        list-style-type: none;
-        display: flex;
-        width: 30%;
-        padding: 0px;
-  
-    }
+        ul {
+            list-style-type: none;
+            display: flex;
+            width: 30%;
+            padding: 0px;
+        }
 
-    li {
-        margin: 0 20px;
-        font-weight: bold;
-        font-size: 2rem;
-    }
+        li {
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
 
-    a {
+        a {
         text-decoration: none;
         color: white;
 
-        &:hover {
-            border-bottom: 2px solid $mainYellow;
-        }
-    }
-
-    h1 {
-        color: $mainYellow;
-        font-size: 6.6rem;
-        width: 40%;
-        text-transform: uppercase;
-    }
-
-     .mainBoxImage {
-        position: absolute;
-        left: 541px;
-        bottom: -147px;
-        height: 630px;
-        width: 900px;
-    }
-
-}
-
-        // MEDIA QUERIES BEGIN
-        // MEDIA QUERIES BEGIN
-        // MEDIA QUERIES BEGIN
-
-    @media (max-width: 480x) {
-
-        main {
-
-            ul {
-
+            &:hover {
+                border-bottom: 2px solid $mainYellow;
             }
+        }
+
+        h1 {
+            color: $mainYellow;
+            font-size: 6.6rem;
+            width: 40%;
+            text-transform: uppercase;
+        }
+
+    }
+
+        .mainBoxImage {
+            position: absolute;
+            left: 541px;
+            bottom: -147px;
+            height: 630px;
+            width: 900px;
+        }
+
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+        // MEDIA QUERIES BEGIN
+
+
+    @media (max-width: 450px) {   
+        height: 65vh;
+
+        .mainFlex {
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            margin-top: 100px;
 
             h1 {
-
-            }
-
-            img {
+                width: 90%;
+                font-size: 5.6rem;
+                text-align: center;
                 
             }
 
-
+            nav {
+                margin-top: 0px;
+            }
 
         }
 
+
     }
+
+
+}
+
+
+       
+
+   
+
+    
 
 
  

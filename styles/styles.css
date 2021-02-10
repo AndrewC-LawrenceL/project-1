@@ -323,11 +323,11 @@ main .mainFlex {
           justify-content: space-between;
 }
 
-main nav {
+main .mainFlex nav {
   margin-top: 50px;
 }
 
-main ul {
+main .mainFlex ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,22 +336,22 @@ main ul {
   padding: 0px;
 }
 
-main li {
+main .mainFlex li {
   margin: 0 20px;
   font-weight: bold;
   font-size: 2rem;
 }
 
-main a {
+main .mainFlex a {
   text-decoration: none;
   color: white;
 }
 
-main a:hover {
+main .mainFlex a:hover {
   border-bottom: 2px solid #FDD908;
 }
 
-main h1 {
+main .mainFlex h1 {
   color: #FDD908;
   font-size: 6.6rem;
   width: 40%;
@@ -364,6 +364,30 @@ main .mainBoxImage {
   bottom: -147px;
   height: 630px;
   width: 900px;
+}
+
+@media (max-width: 450px) {
+  main {
+    height: 65vh;
+  }
+  main .mainFlex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+  main .mainFlex h1 {
+    width: 90%;
+    font-size: 5.6rem;
+    text-align: center;
+  }
+  main .mainFlex nav {
+    margin-top: 0px;
+  }
 }
 
 .menu {
@@ -451,6 +475,26 @@ main .mainBoxImage {
   width: calc(50% - 10px);
   margin: 20px 0px;
   line-height: 4.9rem;
+}
+
+@media (max-width: 450px) {
+  .menu {
+    padding-top: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .menuFlexMain .menuFlex .menuItem {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .menu .menuFlexMain .menuFlex .menuItem h2 {
+    width: 90%;
+  }
 }
 
 .info {
@@ -577,6 +621,42 @@ main .mainBoxImage {
   padding: 20px 0px;
 }
 
+@media (max-width: 450px) {
+  .info .infoFlexMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info .infoFlexMain .infoFlex11 {
+    width: 100%;
+    text-align: center;
+  }
+  .info .infoFlexMain .infoFlex11 button {
+    width: 62%;
+    margin: 0 auto;
+  }
+  .info .infoFlexMain .infoFlex11 .image1 {
+    position: static;
+    width: 75%;
+    margin-bottom: 40px;
+  }
+  .info .infoFlexMain .infoFlex22 {
+    width: 100%;
+    text-align: center;
+  }
+  .info .infoFlexMain .infoFlex22 button {
+    width: 62%;
+    margin: 0 auto;
+  }
+  .info .infoFlexMain .infoFlex22 .image2 {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+}
+
 .vacation {
   background-color: #EAFEFC;
   display: -webkit-box;
@@ -631,6 +711,26 @@ main .mainBoxImage {
   width: 100%;
 }
 
+@media (max-width: 450px) {
+  .vacation {
+    padding: 10px 0px;
+  }
+  .vacation .vacationFlex1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .vacation .vacationFlex1 h2 {
+    padding-top: 0px;
+  }
+  .vacation .vacationFlex1 button {
+    width: 47%;
+  }
+}
+
 .vacationBanner {
   width: 100%;
 }
@@ -674,6 +774,29 @@ main .mainBoxImage {
   font-size: 2.2rem;
 }
 
+@media (max-width: 450px) {
+  .vacation2 .vacationFlexAux {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vacation2 .vacationFlexAux img {
+    width: 56%;
+  }
+  .vacation2 .vacationFlexAux .vacationFlex2 {
+    width: 70%;
+    text-align: center;
+    margin: 60px 0px;
+  }
+  .vacation2 .vacationFlexAux .vacationFlex2 button {
+    width: 67%;
+  }
+}
+
 .gallery {
   background-color: #0D457F;
 }
@@ -693,6 +816,20 @@ main .mainBoxImage {
 .gallery .galleryFlex img {
   width: calc((100% / 3) - 100px);
   margin: 80px 20px;
+}
+
+@media (max-width: 450px) {
+  .gallery .galleryFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0px;
+  }
+  .gallery .galleryFlex img {
+    width: 75%;
+    margin: 40px 20px;
+  }
 }
 
 footer {
