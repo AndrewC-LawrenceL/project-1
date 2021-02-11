@@ -269,6 +269,7 @@ button {
 
 body {
   font-size: 1.7rem;
+  overflow-x: hidden;
 }
 
 body .wrapper {
@@ -366,7 +367,13 @@ main .mainBoxImage {
   width: 900px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
+  main .mainFlex h1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
   main {
     height: 65vh;
   }
@@ -477,7 +484,20 @@ main .mainBoxImage {
   line-height: 4.9rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1160px) {
+  .menu .menuFlexMain .menuFlex .menuItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
   .menu {
     padding-top: 70px;
     -webkit-box-orient: vertical;
@@ -575,16 +595,16 @@ main .mainBoxImage {
   position: relative;
   top: -85px;
   left: -79px;
-  -webkit-box-shadow: #FDD908 21px 21px;
-          box-shadow: #FDD908 21px 21px;
+  -webkit-box-shadow: #fdd908 21px 21px;
+          box-shadow: #fdd908 21px 21px;
 }
 
 .info .infoFlexMain .image2 {
   position: relative;
   bottom: -81px;
-  right: -143px;
-  -webkit-box-shadow: #FDD908 -21px 21px;
-          box-shadow: #FDD908 -21px 21px;
+  right: -113px;
+  -webkit-box-shadow: #fdd908 -21px 21px;
+          box-shadow: #fdd908 -21px 21px;
 }
 
 .info .infoFlexMain .infoFlex1 {
@@ -617,11 +637,32 @@ main .mainBoxImage {
       align-self: center;
 }
 
-.info .infoFlexMain .infoFlex1, .info .infoFlexMain .infoFlex2 {
+.info .infoFlexMain .infoFlex1,
+.info .infoFlexMain .infoFlex2 {
   padding: 20px 0px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 940px) {
+  .info .infoFlexMain .infoFlex1,
+  .info .infoFlexMain .infoFlex2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .info .infoFlexMain button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
   .info .infoFlexMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -711,7 +752,13 @@ main .mainBoxImage {
   width: 100%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 950px) {
+  .vacation .vacationFlex1 button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 550px) {
   .vacation {
     padding: 10px 0px;
   }
@@ -774,7 +821,41 @@ main .mainBoxImage {
   font-size: 2.2rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1300px) {
+  .vacation2 .vacationFlexAux img {
+    display: none;
+  }
+  .vacation2 .vacationFlexAux .vacationFlex2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 940px) {
+  .vacation2 .vacationFlexAux .vacationFlex2 {
+    width: 78%;
+  }
+  .vacation2 .vacationFlexAux .vacationFlex2 p {
+    width: 100%;
+  }
+  .vacation2 .vacationFlexAux .vacationFlex2 button {
+    width: 61%;
+  }
+}
+
+@media (max-width: 550px) {
   .vacation2 .vacationFlexAux {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -818,7 +899,13 @@ main .mainBoxImage {
   margin: 80px 20px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1060px) {
+  .gallery .galleryFlex img {
+    width: calc((100% / 3) - 50px);
+  }
+}
+
+@media (max-width: 550px) {
   .gallery .galleryFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

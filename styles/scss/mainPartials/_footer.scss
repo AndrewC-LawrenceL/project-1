@@ -1,8 +1,8 @@
-footer {
-    background-color: $mainYellow;
-    @include center;
+    footer {
+        background-color: $mainYellow;
+        @include center;
 
-    p {
-        color: $mainBlue;
+        p {
+            color: $mainBlue;
+        }
     }
-}
