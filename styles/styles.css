@@ -1268,7 +1268,7 @@ header.contactWrapper h1 {
   padding: 5px 20px 20px 100px;
   text-transform: uppercase;
   position: absolute;
-  top: 120px;
+  top: 110px;
 }
 
 .contactUsFlexContainer {
@@ -1365,12 +1365,17 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 60%;
-  margin-right: 30px;
-  margin-bottom: 100px;
+  padding-left: 15px;
+  margin-right: 50px;
+  margin-bottom: 120px;
   margin-top: -420px;
   z-index: 3;
   -webkit-box-shadow: 15px 15px #FDD908;
           box-shadow: 15px 15px #FDD908;
+}
+
+.commentFormFlex form {
+  padding-left: 20px;
 }
 
 fieldset {
@@ -1423,4 +1428,150 @@ label[for="commentBox"] {
   margin: 15px 10px 20px 22px;
   border: 0;
   background-color: #FDD908;
+}
+
+@media screen and (max-width: 1212px) {
+  header.contactWrapper h1 {
+    font-size: 5.9rem;
+    padding: 5px 10px 10px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .commentFormFlex {
+    margin-bottom: 195px;
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  header.contactWrapper h1 {
+    font-size: 5.5rem;
+    padding: 5px 00px 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1046px) {
+  header.contactWrapper h1 {
+    font-size: 5.0rem;
+    padding: 5px 0px 0px 100px;
+  }
+  .commentFormFlex {
+    padding-left: 5px;
+  }
+  .commentFormFlex .userName {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  header.contactWrapper ul {
+    padding-left: 130px;
+  }
+  header.contactWrapper h1 {
+    font-size: 5.0rem;
+    padding: 5px 0px 0px 80px;
+    width: 60%;
+  }
+  .socialContainerFlex {
+    width: 30%;
+    padding-left: 20px;
+  }
+  .addressInformation {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .addressInformation a {
+    font-size: 1.5rem;
+  }
+  .addressInformation p {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .userName,
+  .userEmail {
+    font-size: 1.5rem;
+  }
+  .emailComment {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  header.contactWrapper ul {
+    padding-left: 130px;
+  }
+  header.contactWrapper h1 {
+    font-size: 4.5rem;
+    padding: 5px 0px 0px 80px;
+    width: 70%;
+  }
+  .socialContainerFlex {
+    width: 35%;
+  }
+  .contactUsFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .commentFormFlex {
+    width: 90%;
+    margin-bottom: 60px;
+    margin-right: 0px;
+    margin-left: 35px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  header.contactWrapper ul {
+    padding-left: 100px;
+  }
+  header.contactWrapper h1 {
+    font-size: 3.8rem;
+    padding: 5px 0px 0px 50px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .commentFormFlex {
+    margin-left: 25px;
+  }
+  .commentFormFlex .userName,
+  .commentFormFlex .userEmail {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header.contactWrapper ul {
+    padding-left: 70px;
+  }
+  header.contactWrapper h1 {
+    font-size: 3.8rem;
+    padding: 5px 0px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  header.contactWrapper ul {
+    padding-left: 50px;
+  }
+  header.contactWrapper h1 {
+    font-size: 3.5rem;
+    padding: 5px 0px 0px 00px;
+  }
+  .commentFormFlex {
+    margin-left: 20px;
+    margin-top: -230px;
+  }
+  .socialContainerFlex {
+    width: 40%;
+  }
 }
