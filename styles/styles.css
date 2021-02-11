@@ -1557,15 +1557,18 @@ label[for="commentBox"] {
     font-size: 3.8rem;
     padding: 5px 0px 0px 20px;
   }
+  .commentFormFlex form {
+    padding-right: 15px;
+  }
 }
 
 @media screen and (max-width: 481px) {
   header.contactWrapper ul {
-    padding-left: 50px;
+    padding-left: 40px;
   }
   header.contactWrapper h1 {
     font-size: 3.5rem;
-    padding: 5px 0px 0px 00px;
+    padding: 5px 0px 0px 0px;
   }
   .commentFormFlex {
     margin-left: 20px;
@@ -1573,5 +1576,36 @@ label[for="commentBox"] {
   }
   .socialContainerFlex {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  header.contactWrapper ul {
+    padding-left: 20px;
+  }
+  header.contactWrapper nav li {
+    margin: 0 15px;
+  }
+  header.contactWrapper h1 {
+    font-size: 2.9rem;
+  }
+  .commentFormFlex {
+    margin-left: 10px;
+    margin-top: -210px;
+  }
+  .commentFormFlex form {
+    padding-left: 15px;
+  }
+  .socialContainerFlex {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header.contactWrapper ul {
+    padding-left: 15px;
+  }
+  .socialContainerFlex {
+    width: 50%;
   }
 }
