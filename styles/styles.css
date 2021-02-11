@@ -1488,8 +1488,8 @@ header.contactWrapper ul {
 
 header.contactWrapper h1 {
   width: 50%;
-  font-size: 6.3rem;
-  padding: 5px 20px 20px 100px;
+  font-size: 6.1rem;
+  padding: 5px 20px 15px 100px;
   text-transform: uppercase;
   position: absolute;
   top: 110px;
@@ -1592,7 +1592,7 @@ a {
   padding-left: 15px;
   margin-right: 50px;
   margin-bottom: 120px;
-  margin-top: -420px;
+  margin-top: -410px;
   z-index: 3;
   -webkit-box-shadow: 15px 15px #FDD908;
           box-shadow: 15px 15px #FDD908;
@@ -1657,7 +1657,7 @@ label[for="commentBox"] {
 @media screen and (max-width: 1212px) {
   header.contactWrapper h1 {
     font-size: 5.9rem;
-    padding: 5px 10px 10px 100px;
+    padding: 5px 10px 0px 90px;
   }
 }
 
@@ -1670,13 +1670,13 @@ label[for="commentBox"] {
 @media screen and (max-width: 1127px) {
   header.contactWrapper h1 {
     font-size: 5.5rem;
-    padding: 5px 00px 0px 100px;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 1046px) {
   header.contactWrapper h1 {
-    font-size: 5.0rem;
+    font-size: 4.8rem;
     padding: 5px 0px 0px 100px;
   }
   .commentFormFlex {
@@ -1692,7 +1692,7 @@ label[for="commentBox"] {
     padding-left: 130px;
   }
   header.contactWrapper h1 {
-    font-size: 5.0rem;
+    font-size: 4.7rem;
     padding: 5px 0px 0px 80px;
     width: 60%;
   }
@@ -1720,6 +1720,13 @@ label[for="commentBox"] {
   }
   .emailComment {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .commentFormFlex .userName,
+  .commentFormFlex .userEmail {
+    width: 90%;
   }
 }
 
@@ -1766,10 +1773,6 @@ label[for="commentBox"] {
 @media screen and (max-width: 565px) {
   .commentFormFlex {
     margin-left: 25px;
-  }
-  .commentFormFlex .userName,
-  .commentFormFlex .userEmail {
-    width: 90%;
   }
 }
 
