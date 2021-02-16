@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -178,9 +182,69 @@
     <!-- VACATION ENDS-->
     <!-- VACATION ENDS-->
 
+    <!-- FORMS BEGIN-->
+    <!-- FORMS BEGIN-->
+    <!-- NEW SECTON FOR ASSIGNMENT TWO! -->
+
+    <section class="forms">
+        <div class="mainWrapper">
+            <form name="myForm" action="" method="post">
+                <fieldset>
+                    <legend>Stay Updated!</legend>
+                    <h2>Stay Updated</h2>
+                    <div class="formMainFlex">
+                        <div class="formFlex">
+                            <label for="name"></label>
+                            <input type="text" placeholder="Name Here" name="fname"  id="name">
+                            <input type="submit" value="Submit" id="submit2">
+        
+                            <label for="email"></label>
+                            <input type="email" placeholder="Email Here" name="femail" id="email">
+                            <input type="submit" value="Submit" id="submit1">
+
+                            <p>Do You Like Boaty McBoats?</p>
+                            <div class="checkFlex">
+                                <label for="">Yes</label>
+                                <input type="checkbox" id="yes">
+                                <label for="no">No</label>
+                                <input type="checkbox" id="no">
+                            </div>
+                        </div>
+
+                        <label for="textarea"></label>
+                        <textarea name="" class="textArea" id="textArea" cols="30" rows="10" class="textArea" placeholder="Type Feedback Here"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+   
+
+    <!-- FORMS END-->
+    <!-- FORMS END-->
+
     <!-- GALLERY BEGINS-->
     <!-- GALLERY BEGINS-->
-    <div class="mainWrapper">
+
+    <div class="carousel-wrapper">
+        <img src="assets/home-image-1@2x.jpg" class="sideImage" alt="">
+            <div class="carousel">
+                <img class="carousel__photo initial" src="assets_2/img_1.jpg">
+                <img class="carousel__photo" src="assets_2/img_2.jpg">
+                <img class="carousel__photo" src="assets_2/img_3.jpg">
+                <img class="carousel__photo" src="assets_2/img_4.jpg">
+                <img class="carousel__photo" src="assets_2/img_5.jpg">
+        
+                <div class="carousel__button--next"></div>
+                <div class="carousel__button--prev"></div>
+            </div>
+        <img src="assets/home-image-2@2x.jpg" class="sideImage" alt="">
+    </div>
+
+    <!-- OLD GALLERY HTML -->
+
+    <!-- <div class="mainWrapper">
         <section class="gallery">
             <div class="wrapper">
                 <div class="galleryFlex">
@@ -190,11 +254,13 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
 
 
     <!-- GALLERY ENDS
         GALLERY ENDS-->
+
+     
 
     <!-- FOOTER BEGINS-->
     <!-- FOOTER BEGINS-->
@@ -209,7 +275,7 @@
     <!-- FOOTER ENDS
         FOOTER ENDS -->
 
-
+     <script src="script/assignment_2.js"></script>
 </body>
 
 </html>

@@ -878,11 +878,12 @@ main .mainBoxImage {
   }
 }
 
-.gallery {
-  background-color: #0D457F;
-}
-
-.gallery .galleryFlex {
+/* LIFTED CSS */
+/* LIFTED CSS */
+/* LIFTED CSS */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,29 +895,106 @@ main .mainBoxImage {
           align-items: center;
 }
 
-.gallery .galleryFlex img {
-  width: calc((100% / 3) - 100px);
-  margin: 80px 20px;
+.carousel-wrapper .sideImage {
+  width: 27%;
 }
 
-@media (max-width: 1060px) {
-  .gallery .galleryFlex img {
-    width: calc((100% / 3) - 50px);
-  }
+.carousel-wrapper * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@media (max-width: 550px) {
-  .gallery .galleryFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 50px 0px;
-  }
-  .gallery .galleryFlex img {
-    width: 75%;
-    margin: 40px 20px;
-  }
+.carousel {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 33%;
+  margin: 30px 30px;
+}
+
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  -webkit-transition: opacity .5s, z-index .5s, -webkit-transform .5s;
+  transition: opacity .5s, z-index .5s, -webkit-transform .5s;
+  transition: transform .5s, opacity .5s, z-index .5s;
+  transition: transform .5s, opacity .5s, z-index .5s, -webkit-transform .5s;
+}
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+
+.carousel__photo.prev {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  /* Move 'prev' item to the left */
+}
+
+.carousel__photo.next {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  /* Move 'next' item to the right */
+}
+
+/* BUTTONS */
+/* BUTTONS */
+/* BUTTONS */
+/* BUTTONS */
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  /* Sit on top of everything */
+  border: 1px solid black;
+}
+
+.carousel__button--prev {
+  left: 0;
+}
+
+.carousel__button--next {
+  right: 0;
+}
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 footer {
@@ -934,6 +1012,115 @@ footer {
 
 footer p {
   color: #0D457F;
+}
+
+.forms {
+  background-color: #FDD908;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forms fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.forms fieldset h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.forms fieldset .formMainFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+.forms fieldset .formMainFlex textarea {
+  resize: none;
+  padding: 20px;
+}
+
+.forms fieldset .formMainFlex .formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forms fieldset .formMainFlex .formFlex input[type=text], .forms fieldset .formMainFlex .formFlex input[type=email] {
+  width: 100%;
+}
+
+.forms fieldset .formMainFlex .formFlex form {
+  width: 100%;
+}
+
+.forms fieldset .formMainFlex .formFlex #name {
+  margin-bottom: 20px;
+}
+
+.forms fieldset .formMainFlex .formFlex input[type=checkbox] {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: 1.7px;
+  right: 20px;
+  *overflow: hidden;
+}
+
+.forms fieldset .formMainFlex .formFlex .checkFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.forms fieldset .formMainFlex .formFlex .checkFlex label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
 }
 
 html, body {
